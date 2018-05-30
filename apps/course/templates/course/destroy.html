@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete a course</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Are you sure you want to delete the following course?</h1>
+            <p>Name: {{course.name}}</p>
+            <p>Description: {{course.desc}}</p>
+        <a href='/courses'><button>No</button></a>
+        <a href='/courses/destroy/{{course.id}}/yes'><button>Yes! I want to delete this</button></a>
+        </form>
+    </div>
+</body>
+</html>
